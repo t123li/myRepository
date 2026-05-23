@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"import py_compile; py_compile.compile\\('pomodoro.py', doraise=True\\); print\\('语法检查通过'\\)\")",
+      "PowerShell(Start-Process python -ArgumentList \"pomodoro.py\" -WindowStyle Normal; Start-Sleep -Seconds 3; Write-Output \"程序已启动，窗口应在桌面上可见\")",
+      "PowerShell(python \"C:\\\\Users\\\\TestUser\\\\Desktop\\\\first-cc\\\\pomodoro.py\" 2>&1)",
+      "PowerShell(Start-Process python -ArgumentList \"C:\\\\Users\\\\TestUser\\\\Desktop\\\\first-cc\\\\pomodoro.py\" -WindowStyle Normal; Write-Output \"已启动\")",
+      "PowerShell(Get-Process *)",
+      "PowerShell(git *)"
+    ]
+  }
+}
